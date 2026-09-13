@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <article class="post">
+    <h1 class="post-title">{{ .Title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      <span class="author">作者：{{ with .Params.author }}{{ . }}{{ else }}{{ site.Params.author }}{{ end }}</span>
+      {{ with .Params.tags }}
+        <span class="tags">
+          {{ range . }}<a class="tag" href="{{ "/tags/" | relURL }}{{ . | urlize }}/">#{{ . }}</a>{{ end }}
+        </span>
+      {{ end }}
+    </div>
+    <div class="post-content">{{ .Content }}</div>
+    <p class="back"><a href="{{ "/posts/" | relURL }}">← 返回文章列表</a></p>
+  </article>
+{{ end }}

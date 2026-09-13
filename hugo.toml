@@ -1,0 +1,18 @@
+baseURL = "https://lljjyy00.github.io/boke/"
+languageCode = "zh-cn"
+title = "李佳悦的博客"
+theme = ""
+enableRobotsTXT = true
+timeZone = "Asia/Shanghai"
+
+[params]
+  author = "李佳悦"
+  description = "记录学习与工程实践"
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
+
+[pagination]
+  pagerSize = 10

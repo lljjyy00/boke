@@ -1,0 +1,35 @@
+:root { --fg:#1f2933; --muted:#6b7280; --accent:#1f4e79; --bg:#fff; --code:#f6f8fa; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 16px/1.75 -apple-system, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+}
+.wrap { max-width: 780px; margin: 0 auto; padding: 0 20px; }
+.site-header { border-bottom: 1px solid #e5e7eb; margin-bottom: 28px; }
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+.brand { font-weight: 700; font-size: 18px; color: var(--fg); text-decoration: none; }
+.site-header nav a { margin-left: 16px; color: var(--muted); text-decoration: none; }
+.site-header nav a:hover { color: var(--accent); }
+.page-title { font-size: 26px; margin: 8px 0 18px; }
+.post-list { list-style: none; padding: 0; }
+.post-list li { padding: 12px 0; border-bottom: 1px dashed #e5e7eb; }
+.post-link { font-size: 17px; color: var(--accent); text-decoration: none; }
+.post-link:hover { text-decoration: underline; }
+.post-list time { color: var(--muted); font-size: 13px; margin-left: 10px; }
+.empty { color: var(--muted); }
+.tags { margin-left: 8px; }
+.tag { color: var(--muted); font-size: 13px; text-decoration: none; margin-right: 6px; }
+.post-title { font-size: 26px; margin: 6px 0 8px; }
+.post-meta { color: var(--muted); font-size: 13px; margin-bottom: 22px; }
+.post-meta .author { margin-left: 12px; }
+.post-content h2 { font-size: 20px; margin-top: 28px; }
+.post-content img { max-width: 100%; }
+pre { background: var(--code); padding: 12px 14px; overflow-x: auto; border-radius: 6px; font-size: 13.5px; }
+code { font-family: Consolas, "Courier New", monospace; }
+blockquote { border-left: 3px solid #d1d5db; margin-left: 0; padding-left: 14px; color: var(--muted); }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #e5e7eb; padding: 6px 10px; text-align: left; }
+.back { margin-top: 32px; }
+.back a { color: var(--muted); text-decoration: none; }
+.site-footer { border-top: 1px solid #e5e7eb; margin-top: 48px; padding: 18px 0 28px; color: var(--muted); font-size: 13px; }
+.site-footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px; }
