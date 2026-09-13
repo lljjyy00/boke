@@ -1,7 +1,6 @@
 baseURL = "https://lljjyy00.github.io/boke/"
-languageCode = "zh-cn"
+locale = "zh-cn"
 title = "李佳悦的博客"
-theme = ""
 enableRobotsTXT = true
 timeZone = "Asia/Shanghai"
 
